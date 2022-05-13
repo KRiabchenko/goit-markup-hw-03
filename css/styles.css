@@ -24,6 +24,14 @@ body {
     letter-spacing: 0.03em;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    
+    outline: 2px solid tomato;
+}
+
 /* Logo */
 
 .logo {
@@ -41,7 +49,15 @@ body {
     color: var(--title-text-color);
 }
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
+}
+
+/* Page Header */
+
+.page-header {
+
 }
 
 /* Site-nav */
@@ -71,15 +87,21 @@ body {
 }
 
 /* Hero */
+.hero {
+    text-align: center;
+
+    background-color: var(--hero-bgc-color);
+}
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
     color: var(--primary-bgc-color);
-    background-color: var(--hero-bgc-color);
 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     }
@@ -87,19 +109,23 @@ body {
     /* Section */
 
 .section-title {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--title-text-color);
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-
 }
 
 
 /* Features */
 
 .features .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -108,15 +134,31 @@ body {
     text-transform: uppercase;
 }
 
+.features p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .features .text {
     font-size: 14px;
     line-height: 1.7;
 }
 
+.section-features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* Work */
+.section-title.work {
+    margin-bottom: 50px;
+}
 
 .work .title {
-    color: var(--title-text-color);
+        margin-top: 0;
+        margin-bottom: 0px;
+
+        color: var(--title-text-color);
 
         font-weight: 500;
         font-size: 16px;
@@ -128,7 +170,10 @@ body {
     line-height: 1.19;
 }
 
+
 .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--secondary-bgc-color)
 }
 
@@ -137,7 +182,7 @@ body {
 .button {
     color: var(--primary-text-color);
     background-color: var(--primary-bgc-color);
-
+ 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -146,9 +191,15 @@ body {
 }
 
 .button.primary {
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+
     background-color: var(--accent-color);
     color: var(--primary-bgc-color);
     border-color: var(--accent-color);
+
+    border: 1px solid transparent;
 
     font-family: inherit;
     font-weight: 700;
@@ -156,6 +207,7 @@ body {
     line-height: 1.9;
     letter-spacing: 0.06em;
     cursor: pointer;
+    text-align: center;
 }
 
 .button.link:hover,
