@@ -35,6 +35,10 @@ body {
     /* outline: 2px solid tomato; */
 }
 
+.none {
+    display: none;
+}
+
 .list {
     padding: 0;
     margin: 0;
@@ -140,6 +144,8 @@ align-items: center;
 /* Hero */
 .hero {
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     background-color: var(--hero-bgc-color);
 }
@@ -168,6 +174,9 @@ align-items: center;
 .features .item + .item {
     margin-left: 30px;
 }
+.features .item {
+    width: 270px;
+}
 
 .features .title {
     margin-top: 0;
@@ -193,7 +202,7 @@ align-items: center;
 
 .section-features {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
 }
 
 /* Examples */
@@ -204,10 +213,6 @@ align-items: center;
     width: calc((100%-30px)/3);
 }
 
-.exam-sec {
-    padding-right: 0;
-}
-
 .section-title {
     margin-bottom: 50px;
 }
@@ -215,25 +220,32 @@ align-items: center;
 /* Work */
 .command {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
+
+.command .item + .item {
+    margin-left: 30px;
+}
+
 .border {
     box-sizing: border-box;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white-color);
 }
 
+.team-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 /* .work .item + .item {
     padding-left: 30px;
 }  */
 
-
 .work .title {
     margin-top: 0;
     margin-bottom: 0px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-
+    
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -316,6 +328,9 @@ align-items: center;
 }
 
 .footer-nav {
+    display: block;
+    margin-bottom: 9px;
+
     color: rgba(255, 255, 255, 0.6);
 
     font-style: normal;
@@ -337,7 +352,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .buttons-list .item + .item {
@@ -351,9 +366,7 @@ align-items: center;
 
 .foto .title {
     color: var(--title-text-color);
-}
 
-.foto .title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -366,9 +379,15 @@ align-items: center;
     letter-spacing: 0.03em;
 }
 
+.foto-name {
+    padding: 20px 24px;
+}
+
 /* Buttons Portfolio */
 
 .button-portfolio {
+   padding: 6px 22px;
+
     color: var(--title-text-color);
     background-color: var(--secondary-bgc-color);
     border-color: var(--secondary-bgc-color);
