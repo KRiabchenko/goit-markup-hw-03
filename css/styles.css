@@ -380,9 +380,15 @@ align-items: center;
     letter-spacing: 0.03em;
 }
 
+.foto p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .foto-name {
     padding: 20px 24px;
 }
+
 
 /* Buttons Portfolio */
 
